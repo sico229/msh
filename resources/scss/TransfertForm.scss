@@ -1,0 +1,119 @@
+@import "variables";
+#TransferFormContainer{
+    margin: 75px 0;
+    padding: 75px 0;
+    min-height: 100vh;
+        display: flex;
+        justify-content: center;
+
+
+    &>form{
+        box-shadow: 1px 1px 5px lightgrey;
+        padding: 40px 20px;
+        font-weight: 600;
+
+        h3{
+          font-weight: 800;
+        }
+
+
+        .Amountzone{
+          display: flex;
+          flex-direction: row;
+
+          &>div{
+            &>input{
+              border:unset;
+              background-color: rgb(240, 247, 244);
+              -moz-appearance: textfield;
+              appearance: textfield;
+             
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+              }
+
+              &:focus{
+                outline: none;
+                border: none;
+              }
+            }
+          }
+        }
+
+        &>div{
+          display: flex;
+          flex-direction: column;
+          &>input{
+            border:unset;
+            background-color: rgb(240, 247, 244);
+            -moz-appearance: textfield;
+            appearance: textfield;
+           
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+
+            &:focus{
+              outline: none;
+              border: none;
+            }
+          }
+        }
+
+
+
+        /* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: $themeColor;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: $themeColor;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: $themeColor;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  
+    }
+}

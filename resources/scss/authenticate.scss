@@ -1,0 +1,161 @@
+@import "variables.scss";
+.LoginFormContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &>form{
+        width: 50%;
+        border:1px solid $themeColor;
+        padding: 10px;
+
+        h6{
+            font-weight: bolder;
+            color: $themeColor;
+            padding: 10px;
+            font-size: 2em;
+        }
+
+
+        button{
+            transition: 0.5s;
+            color: aliceblue;
+            background-color: $themeColor;
+
+            &:hover{
+                transition: 0.5s;
+                color: aliceblue;
+                background-color: darken($themeColor, 7);
+            }
+        }
+
+    }
+
+}
+
+.RegisterFormContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+
+    &>form{
+        box-shadow: 1px 1px 5px $themeColor;
+        padding: 50px 10px;
+
+        h4{
+            font-weight: bolder;
+            color: $themeColor;
+            padding: 10px;
+            font-size: 2em;
+        }
+
+        button{
+            display: block;
+            width: 80%;
+            padding: 10px;
+            text-align: center;
+            background-color: lighten($themeColor,7);
+            color: #fff;
+            transition: 0.2s;
+            &:nth-child(1){
+                display: inline !important;
+                width: auto;
+            }
+
+            &:hover{
+                color: #fff;
+                transition: 0.2s;
+                background-color: lighten($themeColor,2); 
+            }
+        }
+        fieldset{
+            
+            legend{
+                background-color: rgb(250, 217, 167);
+                margin: 20px 0 0 0;
+                padding: 0 10px;
+                color: rgb(255, 255, 255);
+                font-weight: 700;
+            }
+        }
+
+    .form-row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        
+    }
+        /* Input container */
+        .form__group {
+            position: relative;
+            padding: 20px 0 0;
+            width: 100%;
+          }
+          
+          .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #9b9b9b9e;
+            outline: 0;
+            font-size: 17px;
+            color: $themeColor;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+          }
+          
+          .form__field::placeholder {
+            color: transparent;
+          }
+          
+          .form__field:placeholder-shown ~ .form__label {
+            font-size: 17px;
+            cursor: text;
+            top: 20px;
+          }
+          
+          .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 17px;
+            color: #9b9b9b;
+            pointer-events: none;
+          }
+          
+          .form__field:focus {
+            padding-bottom: 6px;
+            font-weight: 600;
+            border-width: 3px;
+            border-image: linear-gradient(to right, $themeColor, $themeColor);
+            border-image-slice: 1;
+          }
+          
+          .form__field:focus ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 17px;
+            color: $themeColor;
+            font-weight: 500;
+          }
+          
+          /* reset input */
+          .form__field:required, .form__field:invalid {
+            box-shadow: none;
+          }
+  
+    }
+
+    
+    
+}

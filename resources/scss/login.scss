@@ -1,0 +1,84 @@
+@import "variables.scss";
+.loginContainer{
+    width:100%;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    &>form{
+        width: 70%;
+        border:1px solid $themeColor;
+        padding: 20px;
+
+       button{
+          display: inline-block;
+          width: 90%;
+        }
+        
+        
+        .form__group {
+            position: relative;
+            padding: 20px 0 0;
+            width: 100%;
+          }
+          
+          .form__field {
+            font-family: inherit;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #9b9b9b9e;
+            outline: 0;
+            font-size: 17px;
+            color: $themeColor;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s;
+          }
+          
+          .form__field::placeholder {
+            color: transparent;
+          }
+          
+          .form__field:placeholder-shown ~ .form__label {
+            font-size: 17px;
+            cursor: text;
+            top: 20px;
+          }
+          
+          .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 17px;
+            color: #9b9b9b;
+            pointer-events: none;
+          }
+          
+          .form__field:focus {
+            padding-bottom: 6px;
+            font-weight: 600;
+            border-width: 3px;
+            border-image: linear-gradient(to right, $themeColor, $themeColor);
+            border-image-slice: 1;
+          }
+          
+          .form__field:focus ~ .form__label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 17px;
+            color: $themeColor;
+            font-weight: 500;
+          }
+          
+          /* reset input */
+          .form__field:required, .form__field:invalid {
+            box-shadow: none;
+          }
+    }
+}

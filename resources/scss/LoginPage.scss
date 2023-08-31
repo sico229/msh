@@ -1,0 +1,20 @@
+$themeColor:#1d821c;
+$headerHeight:75px;
+$baseColor:#1e1e1e;
+$orange:rgba(245, 159, 30, 0.712);
+#LoginPage{
+    min-height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form{
+        width:50%;
+        min-height: 50vh;
+        padding: 20px;
+        border:1px solid $themeColor;
+        font-weight: bold;
+        box-shadow: 1px 2px 5px #2e2c2c;
+    }
+
+}

@@ -1,0 +1,16 @@
+#LoginPage {
+  min-height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#LoginPage form {
+  width: 50%;
+  min-height: 50vh;
+  padding: 20px;
+  border: 1px solid #1d821c;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px #2e2c2c;
+}
+
+/*# sourceMappingURL=LoginPage.css.map */
