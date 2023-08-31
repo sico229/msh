@@ -34,4 +34,7 @@ class PagesController extends Controller
     public function Transfert(){
         return Inertia::render('Transfert',['toto'=>'sico']);
     }
+    public function Send(){
+        return Inertia::render('Sender');
+    }
 }

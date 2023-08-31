@@ -18,6 +18,7 @@ Route::get('/', [PagesController::class,'Accueil'])->name('Accueil');
 Route::get('versions', [PagesController::class,'Version'])->name('Version');
 Route :: middleware (['auth']) -> group (function () { 
     Route::get('Transfert',[PagesController::class,'Transfert'])->name('Transfert');
+    Route::get('Send',[PagesController::class,'Send'])->name('Send');
      
     });
 
